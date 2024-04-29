@@ -1,8 +1,13 @@
-import React from "react";
+"use client";
 
-export default function PaymentForm() {
+import { addGoingEvent } from "@/app/actions";
+import { useAuth } from "@/app/hooks/useAuth";
+
+export default function PaymentForm({ eventId }) {
+  const { auth } = useAuth();
+
   return (
-    <form>
+    <form action={() => addGoingEvent(eventId, auth)}>
       <div className="my-4 space-y-2">
         <label htmlFor="name" className="block">
           Name

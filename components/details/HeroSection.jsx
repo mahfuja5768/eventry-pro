@@ -29,6 +29,7 @@ const HeroSection = ({ eventInfo }) => {
           fromDetails
           eventId={eventInfo?.id}
           interestedUserIds={eventInfo?.interested_ids}
+          goingUserIds={eventInfo?.going_ids}
         />
       </div>
     </section>
