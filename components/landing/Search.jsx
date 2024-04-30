@@ -18,6 +18,7 @@ const Search = () => {
     replace(`${pathname}?${params.toString()}`);
   }, 500);
 
+  //debounce
   function handleSearch(term) {
     doSearch(term);
   }

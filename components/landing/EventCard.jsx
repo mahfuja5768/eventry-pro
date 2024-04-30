@@ -8,7 +8,7 @@ const EventCard = ({ event }) => {
     <div className="overflow-hidden rounded-md bg-[#242526]">
       <EventSchemaScript event={event} />
 
-      <Image
+      <Image blurDataURL=""
         src={event?.imageUrl}
         alt={event?.name}
         className="w-full"
